@@ -129,7 +129,7 @@ Antes de iniciar, asegúrate de tener instalado:
 
 Puedes descargar la colección preconfigurada para probar todos los endpoints, incluidos los casos de error:
 
-[Descargar Node CRUD Simple.postman_collection.json](./Node%20CRUD%20Simple.postman_collection.json)
+[Descargar Node CRUD Simple.postman_collection.json](./assets/collection-postman.json)
 
 1. **Importar la colección en Postman**:
    - Abre Postman y haz clic en **Importar**.
