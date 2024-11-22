@@ -172,4 +172,4 @@ Este proyecto está bajo la licencia [MIT](LICENSE).
 Si tienes preguntas o necesitas ayuda, puedes contactarme en:
 
 - GitHub: [GustavoGBlanco](https://github.com/GustavoGBlanco)
-- Email: **[tu-email@example.com]**
+- Email: **[gustavogblanco@live.com]**
