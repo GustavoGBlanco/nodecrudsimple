@@ -1,4 +1,6 @@
+// Importamos express para poder crear rutas con su router
 import express from 'express';
+// Importamos los controladores que contienen la lógica para cada operación sobre usuarios
 import {
     getAllUsers,
     getUserById,
@@ -7,17 +9,33 @@ import {
     deleteUser
 } from '../controllers/userController.js';
 
+// Inicializamos el router de Express
 const router = express.Router();
 
-//GET -> localhost:3001/api/users - localhost:3001/api/users/
+/**
+ * Definimos las rutas para el recurso /users
+ * Estas rutas manejan operaciones CRUD sobre los usuarios
+ */
+
+// GET /api/users
+// Obtiene todos los usuarios
 router.get('/', getAllUsers);
-//GET -> localhost:3001/api/users/1 - localhost:3001/api/users/2 - localhost:3001/api/users/3
+
+// GET /api/users/:id
+// Obtiene un usuario específico según su ID
 router.get('/:id', getUserById);
-//POST -> localhost:3001/api/users - localhost:3001/api/users/
+
+// POST /api/users
+// Crea un nuevo usuario con los datos enviados en el body
 router.post('/', createUser);
-//PUT -> localhost:3001/api/users/1 - localhost:3001/api/users/2 - localhost:3001/api/users/3
+
+// PUT /api/users/:id
+// Actualiza un usuario existente según su ID
 router.put('/:id', updateUser);
-//DELETE -> localhost:3001/api/users/1 - localhost:3001/api/users/2 - localhost:3001/api/users/3
+
+// DELETE /api/users/:id
+// Elimina un usuario por su ID
 router.delete('/:id', deleteUser);
 
+// Exportamos el router para poder usarlo en el archivo principal de rutas o en app.js
 export default router;
